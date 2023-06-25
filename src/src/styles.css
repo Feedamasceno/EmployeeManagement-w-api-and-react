@@ -1,0 +1,1102 @@
+/* Desktop */
+html {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.HeaderLink {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  color: black;
+}
+
+/*.cancelEditLink {
+  text-decoration: none;
+}*/
+
+.cancelAddLink {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.Top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.Top button {
+  background-color: #2fbf71;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.AddLink {
+  text-decoration: none;
+  color: white;
+}
+
+.Top button:hover {
+  transform: scale(1.05);
+}
+
+.Results {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: white;
+}
+
+.Top2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.RefineResults {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.Status {
+  display: flex;
+  gap: 40px;
+}
+
+.Date input {
+  width: 125px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 0px 10px 0px 10px;
+}
+
+.Results button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.Results input {
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 15px;
+}
+
+.Results input:focus {
+  border: 1px solid none;
+  transition: 0.35s ease;
+  color: #000000;
+}
+
+.Results input::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.Results input::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.Results input:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.VerticalLine {
+  border-left: 2px solid rgb(0, 0, 0, 0.2);
+  height: 20px;
+}
+
+.Status p {
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.Date p {
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.Status label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.Cards {
+  margin: 40px 0px 100px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.dataAPI {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.CardEmployee {
+  background-color: #ffffff;
+  width: 350px;
+  height: 320px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 10px 30px 10px;
+}
+
+.CardEmployee:hover {
+  transform: scale(1.05);
+}
+
+.ImageProfile img {
+  background-size: 10%;
+  width: 350px;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.InformationProfile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 20px 10px 20px;
+  align-items: center;
+}
+
+.StatusProfile {
+  color: white;
+  border-radius: 20px;
+  border: none;
+  width: 65px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.Left {
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 230px;
+  text-align: left;
+}
+
+.Left h3 {
+  margin: 0px;
+}
+
+.Right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.Right button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Delete {
+  width: 40px;
+}
+
+.Delete:hover {
+  transform: scale(1.05);
+}
+
+.Edit {
+  width: 40px;
+}
+
+.Edit:hover {
+  transform: scale(1.05);
+}
+
+.SeeMore:hover {
+  font-weight: bold;
+}
+
+.CardEmployeeMore {
+  background-color: #ffffff;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 10px 30px 10px;
+}
+
+.CardEmployeeMore:hover {
+  transform: scale(1.05);
+}
+
+.ImageProfileMore img {
+  background-size: cover;
+  width: 350px;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.InformationProfileMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 20px 10px 20px;
+  align-items: center;
+}
+
+.StatusProfileMore {
+  color: white;
+  border-radius: 20px;
+  border: none;
+  width: 65px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.LeftMore {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 230px;
+  height: 260px;
+  text-align: left;
+}
+
+.LeftMore h3 {
+  margin: 0px;
+}
+
+.InformationsMore p {
+  margin: 0px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.InformationsMore h4 {
+  margin: 10px 0px 20px 0px;
+}
+
+.RightMore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 270px;
+}
+
+.ButtonsRightMore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.RightMore button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.EditMore {
+  width: 40px;
+}
+
+.DeleteMore {
+  width: 40px;
+}
+
+.EditMore:hover {
+  transform: scale(1.05);
+}
+
+.DeleteMore:hover {
+  transform: scale(1.05);
+}
+
+.SeeLess:hover {
+  font-weight: bold;
+}
+
+.AddProfile {
+  margin: 30px 0px 30px 0px;
+}
+
+.AddProfile input {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.AddLine1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px 40px 0px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.statusText {
+    display: flex;
+    margin: 10px 0px 30px 0px;
+    font-size: 15px;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.InputAdd {
+  width: 220px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: white;
+  outline: none;
+  font-size: 15px;
+  padding: 0px 15px 0px 15px;
+  margin-top: 20px;
+}
+
+.Select {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AddLine2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px 40px 0px;
+}
+
+.SelectDate {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddLine3 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 40px 0px 40px 0px;
+}
+
+.AddLine3 button {
+  color: white;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  width: 130px;
+}
+
+.AddLine3 button:hover {
+  transform: scale(1.05);
+}
+
+.Cancel {
+  background-color: #a30b37;
+}
+
+.Add {
+  background-color: #2fbf71;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  height: 2.5rem;
+  padding: 10px 0px;
+  font-size: 0.7rem;
+  position: fixed;
+  bottom: 0px;
+}
+
+.Deletar {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -225px 0px 0px -5px;
+}
+
+.ConfirmDelete {
+  background-color: white;
+  border: solid 1px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.CardEmployeeEdit {
+  position: absolute;
+  background-color: #ffffff;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: -220px -20px 0px 0px;
+}
+
+.CardEmployeeEdit:hover {
+  transform: scale(1.05);
+}
+
+.StatusP {
+  margin-top: -10px;
+}
+
+.CheckEditPage {
+  font-size: 15px;
+  display: flex;
+  gap: 30px;
+  margin: 5px 0px 10px 0px;
+}
+
+.CheckEditPage input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  outline: none;
+}
+
+.LineEditPage input {
+  width: 280px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: white;
+  outline: none;
+  font-size: 15px;
+  padding: 0px 15px 0px 15px;
+  margin: 5px 0px 10px 0px;
+}
+
+.NumberEditPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.TitleEdit {
+  display: flex;
+  flex-direction: row;
+  gap: 140px;
+}
+
+.NumberEditPage input {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: white;
+  outline: none;
+  font-size: 15px;
+  padding: 0px 15px 0px 15px;
+  margin: 5px 0px 10px 0px;
+}
+
+.InformationsMoreEdit {
+  margin: 0px;
+}
+
+.InformationsMoreEdit p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+}
+
+.EditButton {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.EditButton:hover {
+  font-weight: bold;
+}
+
+.CancelButton {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.CancelButton:hover {
+  font-weight: bold;
+}
+
+.BotoesEditPage {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.BotoesEditPage button {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.EditEmployee {
+  text-decoration: none;
+}
+
+.ImageProfileMoreEdit img {
+  background-size: cover;
+  width: 350px;
+  height: 180px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+
+  .App {
+    width: 80%;
+  }
+
+  .RightMore button {
+    margin-top: 10px;
+  }
+
+  .CardEmployeeEdit {
+    position: absolute;
+    background-color: #ffffff;
+    width: 300px;
+    margin: -220px -15px 0px 0px;
+  }
+
+  .InformationsMore p {
+    margin: 3px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .LineEditPage input {
+    width: 230px;
+    height: 30px;
+  }
+
+  .NumberEditPage input {
+    width: 80px;
+    height: 30px;
+  }
+
+  .TitleEdit {
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+  }
+  
+  .Deletar {
+    margin: -245px -15px 0px 0px;
+}
+
+  .Cards {
+    margin-top: -5px;
+  }
+
+  .dataAPI {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .InformationsMore {
+    font-size: 13px;
+  }
+
+  .SeeMore {
+    width: 70px;
+  }
+
+  .TopAddEmployee {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .TopEditEmployee {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .CardEmployee,
+  .CardEmployeeMore {
+    width: 300px;
+    height: auto;
+  }
+
+  .ImageProfile img,
+  .ImageProfileMoreEdit img {
+    width: 300px;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .ImageProfileMore img {
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .InformationProfile,
+  .InformationProfileMore {
+    padding: 10px 15px 5px 15px;
+  }
+
+  .Left,
+  .LeftMore {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .AddProfile {
+    display: flex;
+    margin: 0px 0px 20px 0px;
+    justify-content: center;
+  }
+
+  .SelectDate {
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .statusText {
+    display: flex;
+  }
+
+  .statusTextAdd {
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .statusText {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 30px 0px;
+    font-size: 15px;
+  }
+
+  input.select {
+    margin-top: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .AddLine1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .AddLine3 {
+    flex-direction: row;
+    gap: 5px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .AddLine1 input {
+    width: 270px;
+    margin: 5px;
+  }
+
+  .InputAdd {
+    width: 80%;
+  }
+
+  .AddLine3 button {
+    width: 130px;
+  }
+
+  .Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .Top2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .Results {
+    margin-top: 10px;
+    gap: 5px;
+    width: 300px;
+  }
+
+  .Status {
+    margin: 30px 0px 20px 0px;
+  }
+
+  .Date {
+    margin: 10px;
+  }
+
+  .SeeLess {
+    width: 70px;
+  }
+
+  .EditButton {
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .EditButton:hover {
+    font-weight: bold;
+  }
+
+  .CancelButton {
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .CancelButton:hover {
+    font-weight: bold;
+  }
+
+  .BotoesEditPage {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .BotoesEditPage button {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .EditEmployee {
+    text-decoration: none;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* TABLET */
+/*@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .Cards{
+  flex-wrap: wrap;
+  }
+  
+  .Status p {
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.Date{
+  margin-top: 15px;
+}
+
+.Date p {
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.Status label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.Cards {
+  margin: 40px 0px 100px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.dataAPI {
+  width: 120%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.CardEmployee {
+  background-color: #ffffff;
+  width: 280px;
+  height: 315px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 10px 30px 10px;
+}
+
+.CardEmployee:hover {
+  transform: scale(1.00);
+}
+
+.ImageProfile img {
+  background-size: contain;
+  width: 280px;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.InformationProfile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 20px 10px 20px;
+  align-items: center;
+}
+
+.StatusProfile {
+  color: white;
+  border-radius: 20px;
+  border: none;
+  width: 65px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.Left {
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 230px;
+  text-align: left;
+}
+
+.Left h3 {
+  margin: 0px;
+}
+
+.Right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.Top2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: ROW;
+}
+
+.ImageProfileMore img {
+    background-size: cover;
+    width: 280px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.Right button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.CardEmployeeMore {
+  background-color: #ffffff;
+  width: 280px;
+  height: 500px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 10px 30px 10px;
+}
+
+.CardEmployeeMore:hover {
+  transform: scale(1.05);
+}
+
+.ImageProfileMore img {
+  background-size: cover;
+    width: 280px;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.InformationProfileMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 20px 10px 20px;
+  align-items: center;
+}
+
+.StatusProfileMore {
+  color: black;
+  border-radius: 20px;
+  border: none;
+  width: 65px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.SelectDate {
+    width: 290px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AddProfile input {
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.InputAdd {
+    width: 255px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: white;
+    outline: none;
+    font-size: 15px;
+    padding: 0px 15px 0px 15px;
+}
+
+label.statusTextAdd{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.AddLine3 button{
+  height: 45px;
+  margin-top: 20px;
+}
+
+.AddLine3{
+    margin-top: 5px;
+}
+
+.CardEmployeeEdit {
+  width: 280px;
+}
+
+.NumberEditPage input {
+    width: 80px;
+}
+
+.LineEditPage input {
+    width: 210px;
+    height: 35px;
+}
+
+.InformationsMore h4 {
+    margin: 0px 0px 20px 0px;
+}
+
+.RightMore button {
+  margin-top: 10px;
+}
+
+.InformationsMore p {
+    margin: 3px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+}*/
